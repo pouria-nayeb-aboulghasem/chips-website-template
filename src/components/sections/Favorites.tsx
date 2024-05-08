@@ -40,11 +40,23 @@ const Favorites = () => {
         {
             id: 6,
             imgName: FavoriteChips3Img
+        },
+        {
+            id: 7,
+            imgName: FavoriteChips1Img
+        },
+        {
+            id: 8,
+            imgName: FavoriteChips2Img
+        },
+        {
+            id: 9,
+            imgName: FavoriteChips3Img
         }
     ]);
 
     return (<div className="favorite section" id="favorites">
-        <div className="favorite__container container grid">
+        <div className="favorite__container container">
             <div className="favorite__content grid">
                 <section className="favorite__data">
                     <h2 className="section__title">
@@ -65,13 +77,13 @@ const Favorites = () => {
             <Swiper
                 className="favorite__swiper"
                 loop={true}
-                grabCursor={true}
-                slidesPerGroup={1}
+                grabCursor={false}
                 autoplay={{
                     delay: 2500,
                     reverseDirection: true,
                     disableOnInteraction: false,
                 }}
+                slidesPerGroup={1}
                 slidesPerView={"auto"}
                 centeredSlides={true}
                 modules={[Autoplay]}

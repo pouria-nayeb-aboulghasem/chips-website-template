@@ -80,6 +80,11 @@
     }
 
     .favorite {
+
+        &__container {
+            display: grid;
+        }
+
         &__content {
             grid-template-columns: 370px;
             justify-content: center;

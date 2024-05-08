@@ -22,7 +22,7 @@ const Home = () => {
         sr.reveal(".hero__chips-1, .hero__chips-2, .hero__chips-3", { delay: 1000, interval: 30 });
         sr.reveal(".hero__leaf", { delay: 1200 });
         sr.reveal(".hero__tomato-1, .hero__tomato-2", { delay: 1400, interval: 10 });
-        sr.reveal(".care__img, .contact__img", { origin: "left" });
+        sr.reveal(".care__img", { origin: "left" });
         sr.reveal(".care__list, .contact__data", { origin: "right" });
         sr.reveal(".banner__item, .product__item", { interval: 100 });
     }, [])
