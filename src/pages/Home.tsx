@@ -14,8 +14,7 @@ const Home = () => {
             origin: "top",
             distance: "60px",
             duration: 2500,
-            delay: 300,
-            reset: true
+            delay: 300
         })
 
         sr.reveal(".hero__data, .favorite__container, .footer__container");
