@@ -1,0 +1,29 @@
+.banner {
+    padding-top: var(--space-6);
+
+    &__container {
+        background-color: var(--secondary-color);
+        padding: var(--space-2) var(--space-3);
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        column-gap: var(--space-3);
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        color: var(--secondary-color-dark);
+        column-gap: var(--space-1);
+
+        & i {
+            font-size: 1.5rem;
+        }
+
+        & span {
+            font-size: var(--fs-sm) var(--ff-titan);
+        }
+    }
+}

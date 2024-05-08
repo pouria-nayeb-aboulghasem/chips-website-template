@@ -1,0 +1,76 @@
+.favorite {
+    &__content {
+        row-gap: var(--space-6);
+        grid-template-columns: 100%;
+        padding-bottom: var(--space-6);
+    }
+
+    &__data {
+        position: relative;
+        text-align: center;
+    }
+
+    &__cheese-1,
+    &__cheese-2 {
+        position: absolute;
+        width: 40px;
+        opacity: 0.5;
+    }
+
+    &__cheese-1 {
+        top: var(--space-4);
+        right: -1rem;
+        rotate: -15deg;
+    }
+
+    &__cheese-2 {
+        bottom: -2rem;
+        left: -0.75rem;
+        transform: scaleX(-1) rotate(45deg);
+    }
+
+    &__item {
+        position: relative;
+        width: 200px;
+    }
+
+    &__img {
+        width: 200px;
+        scale: 0.8;
+        transition: scale 0.4s, filter 0.4s;
+    }
+
+    &__leaf-1,
+    &__leaf-2 {
+        width: 70px;
+        position: absolute;
+        filter: var(--shadow-img);
+        scale: 0;
+        transition: scale 0.4s 0.1s;
+    }
+
+    &__leaf-1 {
+        top: -1rem;
+        right: -0.5rem;
+    }
+
+    &__leaf-2 {
+        bottom: -1rem;
+        left: -0.5rem;
+    }
+}
+
+.swiper {
+    margin-inline: initial;
+    overflow: visible;
+}
+
+:is(.swiper-slide-active, .swiper-slide-duplicate-active) .favorite__img {
+    scale: 1;
+    filter: var(--shadow-img);
+}
+
+:is(.swiper-slide-active, .swiper-slide-duplicate-active) .favorite__leaf-1,
+:is(.swiper-slide-active, .swiper-slide-duplicate-active) .favorite__leaf-2 {
+    scale: 1;
+}

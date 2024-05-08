@@ -1,0 +1,72 @@
+.contact {
+    &__container {
+        position: relative;
+        background-color: var(--primary-color-darken);
+        padding-top: var(--space-7);
+        border-radius: 3rem;
+        box-shadow: inset var(--shadow-card);
+        overflow: hidden;
+    }
+
+    &__content {
+        padding-top: var(--space-2);
+        row-gap: var(--space-6);
+    }
+
+    &__data {
+        text-align: center;
+    }
+
+    &__title {
+        font: var(--fw-regular) var(--fs-xl) var(--ff-titan);
+        margin-block: var(--space-2) var(--space-1);
+    }
+
+    &__social {
+        display: flex;
+        justify-content: center;
+        column-gap: 0.75rem;
+
+        & a {
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+        }
+    }
+
+    &__info {
+        font-style: normal;
+        margin-bottom: var(--space-2);
+    }
+
+    &__img {
+        width: 200px;
+        justify-self: center;
+        filter: var(--shadow-img);
+    }
+
+    &__shrimp,
+    &__crab,
+    &__meat {
+        position: absolute;
+        width: 40px;
+        opacity: 0.5;
+    }
+
+    &__shrimp {
+        top: 9rem;
+        right: var(--space-3);
+        rotate: 15deg;
+    }
+
+    &__crab {
+        top: 17rem;
+        left: var(--space-2);
+        rotate: 15deg;
+    }
+
+    &__meat {
+        right: var(--space-4);
+        bottom: 11rem;
+        rotate: -15deg;
+    }
+}
