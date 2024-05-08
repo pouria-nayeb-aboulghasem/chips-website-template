@@ -1,0 +1,17 @@
+1403/02/17
+start: assets and more
+end: hero section button mobile version
+
+---
+
+1403/02/18
+
+start: favorites mobile version
+end: products mobile version
+
+---
+
+1403/02/19
+
+start: contact
+end: responsive
